@@ -1,2 +1,5 @@
-# ED2122
-Estruturas de Dados 2021/2022 ISEC
+# Estruturas de Dados
+## Overview
+Apontamentos de Estruturas de Dados, ISEC 2021/2022
+
+
