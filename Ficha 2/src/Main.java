@@ -2,11 +2,15 @@ import java.util.Arrays;
 import java.util.Random;
 
 import static Ex1.BinaryRecursiveSearch.binaryRecursiveSearch;
+import static Ex10.GetBiggerThanIndex.getBiggerThanIndex;
 import static Ex2.BinaryIterativeSearch.binaryIterativeSearch;
 import static Ex3.GetArrayPosition.getArrayPosition;
 import static Ex4.GetPositionOrOrder.getPositionOrOrder;
 import static Ex5.GetPercent.getPercent;
 import static Ex6.GetNumbersOnInterval.getNumbersOnInterval;
+import static Ex7.GetReplicated.getReplicated;
+import static Ex8.GetBiggerThanZ.getBiggerThanZ;
+import static Ex9.GetNumberNegative.getNumberNegative;
 
 public class Main {
     public static int[] createArrayWith(int value, int dim, boolean diff){
@@ -52,7 +56,7 @@ public class Main {
         System.out.println("A: " + arrayPosition);
 
         System.out.println("\t----EX 4----\t");
-        int arrayPositionOrOrder = getPositionOrOrder(80, array);
+        int arrayPositionOrOrder = getPositionOrOrder(79, array);
         System.out.println("A: " + arrayPositionOrOrder);
 
         System.out.println("\t----EX 5----\t");
@@ -62,5 +66,39 @@ public class Main {
         System.out.println("\t----EX 6----\t");
         int numbersOnInterval = getNumbersOnInterval(19, 60, array);
         System.out.println("A: " + numbersOnInterval);
+
+
+        int[] array2 = {3, 3, 7, 7, 12, 14, 14};
+
+        System.out.println("\t----EX 7----\t");
+        boolean getReplicated = getReplicated(14, array2);
+        System.out.println("A: " + getReplicated);
+
+        int[] array3 = {6, 7, 8, 9, 10, 11, 12};
+
+        System.out.println("\t----EX 8----\t");
+        int getBigger = getBiggerThanZ(15, array3);
+        System.out.println("A: " + getBigger);
+
+        int[] array4 = {3, 6, 8, -10, -3, -2, -1};
+
+        System.out.println("\t----EX 9----\t");
+        int getNegative = getNumberNegative(-2, array4);
+        System.out.println("A: " + getNegative);
+
+        int[] array5 = {3, 7, 12, 15};
+        int[] array6 = {-3, 1, 7, 12, 15};
+        int[] array7 = {-15,-14, 1, 2, 3, 4};
+
+        System.out.println("\t----EX 10----\t");
+
+        int getIndex = getBiggerThanIndex(array5);
+        System.out.println("A: " + getIndex);
+
+        getIndex = getBiggerThanIndex(array6);
+        System.out.println("A: " + getIndex);
+
+        getIndex = getBiggerThanIndex(array7);
+        System.out.println("A: " + getIndex);
     }
 }
